@@ -1,0 +1,136 @@
+.cardDetailsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+}
+
+.cardDetailsOverflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 7;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.CardDetails {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 8;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  height: 110px;
+  padding: 0px 0px 5px 0px;
+  padding: 15px;
+}
+
+.images::-webkit-scrollbar {
+  height: 10px;
+  background-color: #650062;
+  border-radius: 4px;
+}
+
+.CardDetails img {
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  color: #7a0076;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+.closeDetails {
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.closeDetails:hover {
+  color: red;
+}
+
+.addToCart {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #7d0079;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: 0.3s;
+}
+
+.addToCart img {
+  height: 25px;
+  width: 25px;
+  object-fit: contain;
+  border: none;
+}
+
+.addToCart:hover {
+  background-color: #ac00a6;
+}
+
+@media screen and (min-width: 900px) {
+  .CardDetails {
+    height: 400px;
+    width: 450px;
+  }
+
+  .images {
+    height: auto;
+  }
+
+  .CardDetails img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .addToCart img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+    border: none;
+  }
+}

@@ -1,0 +1,120 @@
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #50004d;
+  padding: 40px;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.Navbar a:hover {
+  color: #b902b3;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  font-weight: bold;
+  list-style: none;
+}
+
+.Navbar ul li {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.Navbar ul li:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Navbar form {
+  display: flex;
+}
+
+.Navbar .searcher {
+  width: 140px;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+.Navbar .searchBtn {
+  width: 60px;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  outline: none;
+  background-color: white;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Navbar .searchBtn:hover {
+  background-color: rgb(205, 205, 205);
+}
+
+.cartBtn {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: red;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  transition: 0.4s;
+}
+
+.cartBtn:hover {
+  background-color: rgb(255, 75, 43);
+}
+
+.cartBtn img {
+  height: 20px;
+  width: 20px;
+}
+
+.cartBtn span {
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .Navbar .searcher {
+    width: 170px;
+  }
+
+  .Navbar .searchBtn {
+    width: 90px;
+  }
+
+  .Navbar .cartBtn {
+    height: 35px;
+    width: 35px;
+  }
+}

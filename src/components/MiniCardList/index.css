@@ -1,0 +1,25 @@
+.MiniCardList {
+  display: flex;
+  gap: 10px;
+  padding: 10px 30px 10px 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-shadow: 1px 2px 4px #50004d;
+  width: 200px;
+  border-radius: 6px;
+  align-self: center;
+}
+
+.MiniCardList::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .MiniCardList {
+    width: 300px;
+  }
+
+  .MiniCardList::-webkit-scrollbar {
+    display: visible;
+  }
+}
